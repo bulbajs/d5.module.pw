@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['192.168.1.8', '127.0.0.1', 'localhost']
 
+LOGIN_REDIRECT_URL = '/products'
 
 # Application definition
 
