@@ -97,8 +97,12 @@ WSGI_APPLICATION = 'd5_module_pw.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd5',
+        'USER': 'postgres',
+        'PASSWORD': 'elephant',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
