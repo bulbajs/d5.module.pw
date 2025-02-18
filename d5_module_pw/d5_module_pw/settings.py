@@ -96,6 +96,7 @@ WSGI_APPLICATION = 'd5_module_pw.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
+
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'd5',
@@ -104,7 +105,9 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432',
     }
+
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -152,5 +155,5 @@ STATICFILES_DIRS = [
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_LOGIN_METHOD = 'email'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
