@@ -7,8 +7,8 @@ from django.contrib.auth.views import LoginView
 
 
 class CreateAccount(CreateView):
-    form_class = SignUpForm
     model = User
+    form_class = SignUpForm
     template_name = 'registration/signup.html'
     success_url = reverse_lazy('login')
 
